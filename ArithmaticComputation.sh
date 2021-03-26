@@ -9,3 +9,5 @@ firstCompute=$(($a+$b*$c))
 secondCompute=$(($a*$b+$c))
 
 thirdCompute=$(($c+$a/$b))
+
+fourthCompute=$(($a%$b+$c))
