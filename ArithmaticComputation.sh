@@ -28,3 +28,19 @@ do
 done
 
 echo ${ArrayResult[@]}
+
+temp=0
+for ((i=1; i<=${#ArrayResult[@]}; i++))
+do
+   for ((j=$(($i+1)); j<=${#ArrayResult[@]}; j++))
+   do
+      if [ ${ArrayResult[$i]} -lt ${ArrayResult[$j]} ]
+      then
+         temp=${ArrayResult[$i]}
+         ArrayResult[$i]=${ArrayResult[$j]}
+         ArrayResult[$j]=$temp
+      fi
+   done
+done
+
+echo "Array in Descending Order : ${ArrayResult[@]}"
