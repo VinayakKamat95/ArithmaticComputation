@@ -5,3 +5,5 @@ read a b c
 echo $a $b $c
 
 firstCompute=$(($a+$b*$c))
+
+secondCompute=$(($a*$b+$c))
