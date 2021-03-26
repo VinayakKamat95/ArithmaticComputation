@@ -7,3 +7,5 @@ echo $a $b $c
 firstCompute=$(($a+$b*$c))
 
 secondCompute=$(($a*$b+$c))
+
+thirdCompute=$(($c+$a/$b))
