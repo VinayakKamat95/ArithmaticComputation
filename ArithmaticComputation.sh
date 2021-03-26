@@ -20,3 +20,11 @@ DictResult[3]=$thirdCompute
 DictResult[4]=$fourthCompute
 
 echo ${DictResult[@]}
+
+
+for ((i=1; i<=${#DictResult[@]}; i++))
+do
+	ArrayResult[$i]=${DictResult[$i]}
+done
+
+echo ${ArrayResult[@]}
